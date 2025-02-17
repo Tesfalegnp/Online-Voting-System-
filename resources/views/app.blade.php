@@ -38,7 +38,7 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{{ route('login') }}">Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
                     <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
                     <li class="nav-item"><a class="nav-link" href="{{ route('login_in') }}">Login</a></li>
@@ -55,7 +55,7 @@
     <!-- Footer -->
     <footer class="bg-primary text-white text-center py-3">
         <div class="container">
-            <p>&copy; 2024 Online Voting System. All rights reserved.</p>
+        Destributed by <strong>Tesfalegn Petros</strong> <p>&copy; 2025 Online Voting System. All rights reserved.</p>
         </div>
     </footer>
 

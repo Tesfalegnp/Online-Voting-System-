@@ -38,13 +38,18 @@ class AuthController extends Controller
             $request->session()->regenerate();
 
             Alert::success('Success', 'Login success !');
-            return redirect()->intended('/dashboard');
+            return redirect()->intended('/choice');
         } else {
             Alert::error('Error', 'Login failed !');
             return redirect('/login');
         }
     }
-
+public function choice()
+{
+    return view('auth.choice',[
+        'title'=>'Choice'
+    ]);
+}
     public function register()
     {
         return view('auth.register', [

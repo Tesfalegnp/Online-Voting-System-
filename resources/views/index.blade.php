@@ -4,7 +4,7 @@
 
 @section('content')
     <!-- Hero Section -->
-    <header class="hero-section">
+    <header class="hero-section" stye="width:100%">
         <video autoplay muted loop>
             <source src="https://www.w3schools.com/howto/rain.mp4" type="video/mp4">
         </video>
