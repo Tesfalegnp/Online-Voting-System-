@@ -28,3 +28,4 @@ Route::get('/', [DashboardController::class, 'index'])->middleware('auth');
 
 //route barang
 Route::resource('/barang', BarangController::class)->middleware('auth');
+Route::get('/loginn',[AuthController::class, 'log'])->name('login_in');

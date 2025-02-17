@@ -17,7 +17,13 @@ class AuthController extends Controller
             'title' => 'Login', 
          ]);
     }
+    public function log()
+    {
 
+        return view('auth.login', [
+            'title' => 'Login', 
+         ]);
+    }
     public function authenticate(Request $request)
     {
         $credentials = $request->validate([

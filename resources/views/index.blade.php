@@ -19,8 +19,9 @@
                     <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
                     <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/login">Login</a></li>
-
+                    <li class="nav-item"><a class="nav-link" href="{{(route('login_in'))}}">
+                        Login
+                    </a></li>
                 </ul>
             </div>
         </div>
@@ -32,7 +33,7 @@
             <h1 class="display-4">Welcome to the Online Voting System</h1>
             <p class="lead">Secure,  fast, and transparent voting at your fingertips.</p>
             <!-- <a href="/login" class="btn btn-primary btn-lg">Login to Vote</a> -->
-            <a href="/register" class="btn btn-outline-primary btn-lg">Register</a>
+            <!-- <a href="/register" class="btn btn-outline-primary btn-lg">Register</a> -->
         </div>
     </header>
 
