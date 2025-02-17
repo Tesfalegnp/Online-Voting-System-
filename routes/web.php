@@ -20,7 +20,7 @@ Route::get('/login', [AuthController::class, 'index'])->name('login')->middlewar
 Route::post('/login', [AuthController::class, 'authenticate']);
 Route::get('/choice', [AuthController::class, 'choice']);
 
-Route::get('/', [AuthController::class, 'register']);
+Route::get('/register', [AuthController::class, 'register']);
 Route::post('/register', [AuthController::class, 'process']);
 Route::post('/logout', [AuthController::class, 'logout'])->middleware('auth');
 

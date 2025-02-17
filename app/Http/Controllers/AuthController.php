@@ -36,14 +36,14 @@ class AuthController extends Controller
 
         if (Auth::attempt($credentials)) {
             $request->session()->regenerate();
-
             Alert::success('Success', 'Login success !');
             return redirect()->intended('/choice');
         } else {
             Alert::error('Error', 'Login failed !');
-            return redirect('/login');
+            return redirect('/login'); 
         }
     }
+    
 public function choice()
 {
     return view('auth.choice',[
