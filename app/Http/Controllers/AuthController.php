@@ -24,6 +24,15 @@ class AuthController extends Controller
             'title' => 'Login', 
          ]);
     }
+
+    public function contact()
+    {
+
+        return view('contact', [
+            'title' => 'Login', 
+         ]);
+    }
+
     public function authenticate(Request $request)
     {
         $credentials = $request->validate([
@@ -43,7 +52,7 @@ class AuthController extends Controller
             return redirect('/login'); 
         }
     }
-    
+
 public function choice()
 {
     return view('auth.choice',[

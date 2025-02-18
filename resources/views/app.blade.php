@@ -40,14 +40,14 @@
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item"><a class="nav-link" href="{{ route('login') }}">Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{{ route('contact') }}">Contact</a></li>
                     <li class="nav-item"><a class="nav-link" href="{{ route('login_in') }}">Login</a></li>
                 </ul>
             </div>
         </div>
     </nav>
     @include('sweetalert::alert')
-    
+
     <div class="container mt-6">
         @yield('content')
     </div>
