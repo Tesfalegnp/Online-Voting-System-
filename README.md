@@ -1,15 +1,15 @@
-# login_register
-It for CRUD app Log in and Register page only
-# Tesfalegn Petros
-## _Turorial Login Register CRUD Laravel 10_
+# Online Voting System
+It leverages advanced encryption and cloud-based technology to provide a secure, efficient, and accessible platform for conducting transparent elections remotely.# Tesfalegn Petros
+## _Turorial For Online Voting System In  Laravel 10_
 
 ## Features
 
 - Login User
 - Logout User
 - Register User
+- Selection option
 - Validate email
-- CRUD Laravel 10
+- System in Laravel 10
 - Validation
 - Sweat Alert
 - Datatable
