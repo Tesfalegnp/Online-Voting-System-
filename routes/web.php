@@ -24,6 +24,10 @@ Route::get('/register', [AuthController::class, 'register']);
 Route::post('/register', [AuthController::class, 'process']);
 Route::post('/logout', [AuthController::class, 'logout'])->middleware('auth');
 
+
+Route::get('/about', function (){
+    return view('about');
+})->name('about');
 // route dashboard
 Route::get('/dashboard', [DashboardController::class, 'index'])->middleware('auth');
 Route::get('/', [AuthController::class, 'index'])->middleware('auth');
